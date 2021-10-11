@@ -19,7 +19,16 @@ int main(int argc, char *argv[]) {
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
-	
+	printf("Enter integer: \n" );
+	scanf("%d", &n);
+	if ( n%2==0){
+	     for (int i = 2; i < n; i=i+1)
+	    result = result*i;
+	}
+	else {
+		for (int i = 1; i < n; i=i+2)
+		result = result*1;
+    }
 	printf("%d", result);
 	return 0;
 }
